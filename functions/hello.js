@@ -2,7 +2,8 @@ let votesArray = [0, 0, 0, 0];
 
 // functions/hello.js
 exports.handler = async event => {
-    const v = event.queryStringParameters.vote
+    const v = event.queryStringParameters.vote;
+
       if(v === "a") {
         votesArray[0] += 1;
       } else if (v === "b") {
