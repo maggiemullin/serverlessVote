@@ -3,7 +3,7 @@ let votesArray = [0, 0, 0, 0];
 // functions/hello.js
 exports.handler = async event => {
     const v = event.queryStringParameters.vote
-      if(vote.value === "a") {
+      if(v === "a") {
         votesArray[0] += 1;
       } else if (v === "b") {
         votesArray[1] += 1;
@@ -21,4 +21,4 @@ exports.handler = async event => {
       headers : { 'Allow-Control-Allow-Origin' : '*'},
       body: JSON.stringify(votesArray),
     }
-  }
+}
